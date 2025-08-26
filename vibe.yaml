@@ -1,0 +1,13 @@
+version: 1
+id: app-idea-generator-api
+name: App Idea Generator API
+type: server
+server:
+  runtime: python         # node | python | dockerfile
+  port: 8000
+  install: pip install -r requirements.txt
+  start: uvicorn app:app --host 0.0.0.0
+  env_file: /srv/vibes/secrets/app-idea-generator-api.env
+meta:
+  description: API for generating app ideas.
+  tags: [api, python]
