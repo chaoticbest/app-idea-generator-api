@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from agents import Agent, Runner
 import json
-from python_dotenv import load_dotenv
+from dotenv import load_dotenv
 load_dotenv()
 
 @dataclass
